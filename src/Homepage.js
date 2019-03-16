@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react';
 
 import {Homepage as HomepageCss, HomepageContainer} from './Homepage.module.scss';
+import { Link } from 'react-router-dom'
 
 import {
   Button,
@@ -62,6 +63,19 @@ export default () => (
 
 				</p>
 			</Container>
+		</Segment>
+
+		<Segment style={{padding: '6em'}} vertical>
+			<Header as='h3' style={{fontSize: '2em'}}>
+				Quotes I Remember
+			</Header>
+			<p>
+				I record funny quotes that I've heard or overheard. Click <Link to="/quotes">
+          
+            here
+          
+        </Link> to read some of them!
+			</p>
 		</Segment>
 
 		<Segment style={{padding: '4em 0em'}} vertical>
